@@ -22,7 +22,6 @@ const DonateForm = ({ formSubmitHandler, isMinSum }) => {
 
   const changeHandler = (e) => {
     const donationAmount = donationRef.current.value;
-    console.log("donationAmount: ", donationAmount);
     if (donationAmount.match(/[A-Za-z]/g)) {
       setIsInvalid(true);
     }
