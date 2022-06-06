@@ -22,7 +22,7 @@ const ToastContainer = styled.div`
   font-size: 1.3rem;
   position: absolute;
   animation: ${animationKeyframe} 1s ease both;
-  top: 5rem;
+  top: 0rem;
   width: 34rem;
 
   &:after {
