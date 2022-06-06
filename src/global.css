@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #030303;
+  --highlight-color: #02d2ad;
+  --highlight-dim-color: rgba(2, 210, 173, 0.2);
+  --toast-color: #404cde;
+  --toast-dim-color: #f2f3fd;
+  --form-color: #dcdcdc;
+
+  --title-font: "Poppins", sans-serif;
+  --p-font: "IBM Plex Sans", sans-serif;
+
+  --shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+  --gradient: linear-gradient(359deg, #97c1f761, #e2e7ff94);
+  --gradient-warning: linear-gradient(359deg, #f6aa0069, #fff1ba);
+  --gradient-error: linear-gradient(359deg, #f6aa0069, #fff1ba);
+  --gradient-font: #929be4;
+  --gradient-font-warning: #f9a700;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
