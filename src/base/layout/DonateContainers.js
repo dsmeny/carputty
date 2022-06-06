@@ -7,7 +7,6 @@ export const DonateContainer = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   width: 50vw;
-  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,7 +35,7 @@ export const DonateWrapper = styled.div`
   box-shadow: var(--shadow);
   gap: 3rem;
   overflow: hidden;
-  height: 41vh;
+  height: 29rem;
 `;
 
 export const DonateSection = styled.div`
