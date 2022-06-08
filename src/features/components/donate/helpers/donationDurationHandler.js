@@ -39,7 +39,7 @@ export const getRemainingDays = (
     const prevMonthDay = 30 - start.day;
     return duration - (prevMonthDay + current.day);
   } else if (start.month === current.month) {
-    return duration - start.day;
+    return duration - (start.day + current.day);
   }
   return 0;
 };

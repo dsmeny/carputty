@@ -25,13 +25,11 @@ function useDonate() {
   const donate = (amount) => dispatch({ type: "donate", payload: +amount });
   const overwrite = (serverState) =>
     dispatch({ type: "overwrite", payload: serverState });
-  const completed = () => dispatch({ type: "completed" });
 
   return {
     projectDetails,
     donate,
     overwrite,
-    completed,
   };
 }
 

@@ -16,7 +16,7 @@ import {
 } from "../../../../base/layout/DonateContainers";
 
 const Donate = () => {
-  const { projectDetails, donate, overwrite, completed } = useDonate();
+  const { projectDetails, donate, overwrite } = useDonate();
   const [postUpdate, setPostUpdate] = useState(false);
   const [isMinSum, setIsMinSum] = useState(true);
   const [showToast, setShowToast] = useState(false);
@@ -46,7 +46,7 @@ const Donate = () => {
 
   useEffect(() => {
     (async () => {
-      const response = await fetch("http://localhost:3001/api");
+      const response = await fetch("http://localhost:3002/api");
       const data = await response.json();
       if (data.data !== "field does not exist") {
         overwrite(data.data);

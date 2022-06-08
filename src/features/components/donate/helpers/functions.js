@@ -6,7 +6,7 @@ export const convertNumber = (number) =>
     .reduce((string, part) => string + part.value, "");
 
 export const postDonation = async (projectDetails) => {
-  const response = await fetch("http://localhost:3001/api/post", {
+  const response = await fetch("http://localhost:3002/api/post", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
